@@ -60,7 +60,6 @@ jobs:
         with:
           app-id: ${{ secrets.SOURCE_REPO_APP_ID }}
           private-key: ${{ secrets.SOURCE_REPO_APP_PRIVATE_KEY }}
-          owner: ${{ github.repository_owner }}
           repositories: ${{ steps.payload.outputs.source-repo }}
 
       - name: Download Helm Chart Artifact
