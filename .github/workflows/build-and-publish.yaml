@@ -85,6 +85,11 @@ jobs:
           helm repo index --url https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }} .
           cd ..
 
+      - name: Setup Git
+        run: |
+          git config --global user.name "Baserow Helm Repo[bot]"
+          git config --global user.email "helm-repo@baserow.io"
+
       - name: Commit and Push Changes
         run: |
           git add public/*.tgz public/index.yaml
