@@ -14,7 +14,7 @@ entries:
       artifacthub.io/quality: production
     apiVersion: v2
     appVersion: 1.35.3
-    created: "2025-11-11T10:46:57.095291175Z"
+    created: "2025-11-11T14:04:30.895685028Z"
     dependencies:
     - alias: baserow-backend-asgi
       name: baserow
@@ -69,7 +69,7 @@ entries:
       version: 1.1.0
     description: The open platform to create scalable databases and applications—without
       coding.
-    digest: 27f1103160a4163165e3994968de6a3fef44820035994a7fe14e1cc7a9b9fe02
+    digest: 2eab4fd46f9f0c953f459004a891fcc3f38e7a1e9e9f224f72ec428300d775f9
     home: https://github.com/baserow/baserow/blob/develop/deploy/helm/baserow?ref_type=heads
     icon: https://baserow.io/img/favicon_192.png
     name: baserow
@@ -80,4 +80,4 @@ entries:
     urls:
     - https://blackbird-cloud.github.io/baserow-chart-test/baserow-1.0.36.tgz
     version: 1.0.36
-generated: "2025-11-11T10:46:57.079016104Z"
+generated: "2025-11-11T14:04:30.879834787Z"
