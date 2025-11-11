@@ -60,6 +60,7 @@ jobs:
         with:
           app-id: ${{ secrets.SOURCE_REPO_APP_ID }}
           private-key: ${{ secrets.SOURCE_REPO_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
           repositories: ${{ steps.payload.outputs.source-repo }}
 
       - name: Download Helm Chart Artifact
@@ -72,7 +73,7 @@ jobs:
           # Download artifact from source repository
           echo "Downloading artifact from run ${{ steps.payload.outputs.source-run-id }}"
           gh run download ${{ steps.payload.outputs.source-run-id }} \
-            --repo ${{ steps.payload.outputs.source-repo }} \
+            --repo ${{ github.repository_owner }}/${{ steps.payload.outputs.source-repo }} \
             --name helm-chart \
             --dir ./
 
